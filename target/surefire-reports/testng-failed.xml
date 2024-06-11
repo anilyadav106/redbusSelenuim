@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.nagarro.nagp.redbus.customlisterns.ExtentListeners"/>
+    <listener class-name="com.nagarro.nagp.redbus.customlisterns.RetryTestCasesTransformer"/>
+  </listeners>
+  <test thread-count="2" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.nagarro.nagp.testpackage.searchBusTest">
+        <methods>
+          <include name="afterMethodTearDown"/>
+          <include name="launchBrowser"/>
+          <include name="searchBusNoResult"/>
+          <include name="bookBus" invocation-numbers="0"/>
+          <include name="sortBusBySleeperClass"/>
+          <include name="searchBusesultFound" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.nagarro.nagp.testpackage.searchBusTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
